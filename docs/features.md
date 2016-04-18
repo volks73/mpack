@@ -11,7 +11,7 @@ Feedback is welcome! Please let me know if any entries in the table are incorrec
 [msgpack-c]: https://github.com/msgpack/msgpack-c
 [cmp]: https://github.com/camgunz/cmp
 
-|    | [MPack][mpack]<br>(v0.8) | [msgpack-c][msgpack-c]<br>(v1.3.0) | [CMP][cmp]<br>(v14) |
+|    | [MPack][mpack]<br>(v0.9) | [msgpack-c][msgpack-c]<br>(v1.4.1) | [CMP][cmp]<br>(v14) |
 |:------------------------------------|:---:|:---:|:---:|
 | No libc requirement                 | ✓   |     | ✓   |
 | No allocator requirement            | ✓   |     | ✓   |
@@ -33,7 +33,7 @@ Feedback is welcome! Please let me know if any entries in the table are incorrec
 | Compatible with older (1.0) spec    | ✓   | ✓   | ✓   |
 | UTF-8 verification                  | ✓   |     |     |
 
-Most of the features above are optional when supported and can be configured in all libraries. In particular, UTF-8 verification is optional with MPack; compound size tracking is optional and disabled in release by default with MPack; and 1.0 (v4) spec compatibility is optional with CMP (v5/2.0 is the recommended and default usage.)
+Most of the features above are optional when supported and can be configured in all libraries. In particular, UTF-8 verification is optional with MPack; compound size tracking is optional and disabled in release by default with MPack; and 1.0 (v4) spec compatibility is optional in all libraries (v5/2.0 is the recommended and default usage.)
 
 ## Glossary
 
