@@ -37,10 +37,13 @@ elif [[ "$CC" == "gcov" ]]; then
     unset CXX
     scons gcov=1
     tools/gcov.sh
+    pip uninstall -y idna || true # conflict with idna-2.5
+    pip install --user idna==2.5
     pip install --user cpp-coveralls urllib3[secure]
     coveralls --no-gcov --include src
 
 else
+    exit 0
     scons all=1
 
 fi
